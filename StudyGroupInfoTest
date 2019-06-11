@@ -1,0 +1,169 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package module4activity3;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author teresabarker
+ */
+public class StudyGroupInfoTest {
+    
+    public StudyGroupInfoTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
+
+    /**
+     * Test of getCourseName method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testGetCourseName() {
+        System.out.println("getCourseName");
+        StudyGroupInfo instance = null;
+        String expResult = "";
+        String result = instance.getCourseName();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setCourseName method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testSetCourseName() {
+        System.out.println("setCourseName");
+        String _courseName = "";
+        StudyGroupInfo instance = null;
+        instance.setCourseName(_courseName);
+    }
+
+    /**
+     * Test of getCourseSection method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testGetCourseSection() {
+        System.out.println("getCourseSection");
+        StudyGroupInfo instance = null;
+        int expResult = 0;
+        int result = instance.getCourseSection();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setCourseSection method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testSetCourseSection() {
+        System.out.println("setCourseSection");
+        int _courseSection = 0;
+        StudyGroupInfo instance = null;
+        instance.setCourseSection(_courseSection);
+    }
+
+    /**
+     * Test of getInstructorName method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testGetInstructorName() {
+        System.out.println("getInstructorName");
+        StudyGroupInfo instance = null;
+        String expResult = "";
+        String result = instance.getInstructorName();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setInstructorName method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testSetInstructorName() {
+        System.out.println("setInstructorName");
+        String _instructorName = "";
+        StudyGroupInfo instance = null;
+        instance.setInstructorName(_instructorName);
+    }
+
+    /**
+     * Test of getMeetingPlace method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testGetMeetingPlace() {
+        System.out.println("getMeetingPlace");
+        StudyGroupInfo instance = null;
+        String expResult = "";
+        String result = instance.getMeetingPlace();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setMeetingPlace method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testSetMeetingPlace() {
+        System.out.println("setMeetingPlace");
+        String _meetingPlace = "";
+        StudyGroupInfo instance = null;
+        instance.setMeetingPlace(_meetingPlace);
+    }
+
+    /**
+     * Test of getMeetingTime method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testGetMeetingTime() {
+        System.out.println("getMeetingTime");
+        StudyGroupInfo instance = null;
+        String expResult = "";
+        String result = instance.getMeetingTime();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setMeetingTime method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testSetMeetingTime() {
+        System.out.println("setMeetingTime");
+        String _meetingTime = "";
+        StudyGroupInfo instance = null;
+        instance.setMeetingTime(_meetingTime);
+    }
+
+    /**
+     * Test of printGroupInfo method, of class StudyGroupInfo.
+     */
+    @Test
+    public void testPrintGroupInfo() {
+        System.out.println("printGroupInfo");
+        String courseName = "";
+        int courseSection = 0;
+        String instructorName = "";
+        String meetingPlace = "";
+        String meetingTime = "";
+        StudyGroupInfo.printGroupInfo(courseName, courseSection, instructorName, meetingPlace, meetingTime);
+    }
+    
+}
