@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package module4activity3;
+
+/**
+ *
+ * @author teresabarker
+ */
+public class AccountForms {
+    
+    // Variables
+    String firstName, lastName, email, password;
+    String loginEmail, loginPassword;
+    
+    // Constructors
+    public AccountForms(String _firstName, String _lastName, String _email, String _password) {
+        this.firstName = _firstName;
+        this.lastName = _lastName;
+        this.email = _email;
+        this.password = _password;
+    }
+    
+     // Setters and Getters 
+    public String getFirstName() { return firstName;}
+    public void setFirstName(String _firstName) {this.firstName = _firstName;}
+    
+    public String getLastName() { return lastName;}
+    public void setLastName(String _lastName) {this.lastName = _lastName;}
+    
+    public String getEmail() { return email;}
+    public void setEmail(String _email) {this.email = _email;}
+    
+    public String getPassword() { return password;}
+    public void setPassword(String _password) {this.password = _password;}
+   
+}
