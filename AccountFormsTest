@@ -1,0 +1,122 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package module4activity3;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author teresabarker
+ */
+public class AccountFormsTest {
+    
+    public AccountFormsTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+
+    /**
+     * Test of getFirstName method, of class AccountForms.
+     */
+    @Test
+    public void testGetFirstName() {
+        System.out.println("getFirstName");
+        AccountForms instance = null;
+        String expResult = "";
+        String result = instance.getFirstName();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setFirstName method, of class AccountForms.
+     */
+    @Test
+    public void testSetFirstName() {
+        System.out.println("setFirstName");
+        String _firstName = "";
+        AccountForms instance = null;
+        instance.setFirstName(_firstName);
+    }
+
+    /**
+     * Test of getLastName method, of class AccountForms.
+     */
+    @Test
+    public void testGetLastName() {
+        System.out.println("getLastName");
+        AccountForms instance = null;
+        String expResult = "";
+        String result = instance.getLastName();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setLastName method, of class AccountForms.
+     */
+    @Test
+    public void testSetLastName() {
+        System.out.println("setLastName");
+        String _lastName = "";
+        AccountForms instance = null;
+        instance.setLastName(_lastName);
+    }
+
+    /**
+     * Test of getEmail method, of class AccountForms.
+     */
+    @Test
+    public void testGetEmail() {
+        System.out.println("getEmail");
+        AccountForms instance = null;
+        String expResult = "";
+        String result = instance.getEmail();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setEmail method, of class AccountForms.
+     */
+    @Test
+    public void testSetEmail() {
+        System.out.println("setEmail");
+        String _email = "";
+        AccountForms instance = null;
+        instance.setEmail(_email);
+    }
+
+    /**
+     * Test of getPassword method, of class AccountForms.
+     */
+    @Test
+    public void testGetPassword() {
+        System.out.println("getPassword");
+        AccountForms instance = null;
+        String expResult = "";
+        String result = instance.getPassword();
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of setPassword method, of class AccountForms.
+     */
+    @Test
+    public void testSetPassword() {
+        System.out.println("setPassword");
+        String _password = "";
+        AccountForms instance = null;
+        instance.setPassword(_password);
+    }
+    
+}
