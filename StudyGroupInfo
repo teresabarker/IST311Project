@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package module4activity3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author teresabarker
+ */
+public class StudyGroupInfo {
+    
+    // Variables
+    private String courseName, instructorName, meetingPlace, meetingTime;
+    private int courseSection;
+    
+    // Constructor
+    public StudyGroupInfo() {
+        System.out.println("This is a default constructor");
+    }
+    
+     public StudyGroupInfo(String _courseName, int _courseSection, String _instructorName, String _meetingPlace, String _meetingTime ) {
+        this.courseName = _courseName;
+        this.courseSection = _courseSection;
+        this.instructorName = _instructorName;
+        this.meetingPlace = _meetingPlace;
+        this.meetingTime =_meetingTime;
+    }
+     
+    // Setters and Getters 
+    public String getCourseName() { return courseName;}
+    public void setCourseName(String _courseName) {this.courseName = _courseName;}
+        
+    public int getCourseSection() { return courseSection;}
+    public void setCourseSection(int _courseSection) {this.courseSection = _courseSection;}
+    
+    public String getInstructorName() { return instructorName;}
+    public void setInstructorName(String _instructorName) {this.instructorName = _instructorName;}
+    
+    public String getMeetingPlace() {return meetingPlace;}
+    public void setMeetingPlace(String _meetingPlace) {this.meetingPlace = _meetingPlace;}
+    
+    public String getMeetingTime() {return meetingTime;}
+    public void setMeetingTime(String _meetingTime) {this.meetingTime = _meetingTime;}
+            
+            
+    public static void printGroupInfo(String courseName, int courseSection, String instructorName, String meetingPlace, String meetingTime) {
+        System.out.println("Course Name: " + courseName);
+        System.out.println("Course Section: " + courseSection);
+        System.out.println("Instructor Name: " + instructorName);
+        System.out.println("Meeting Location: " + meetingPlace);
+        System.out.println("Meeting Time: " + meetingTime);
+        
+    }
+    
+   
+}
