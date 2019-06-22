@@ -5,7 +5,9 @@
  */
 package studygroupapp;
 import javax.swing.*;
-import View.LoginScreen;
+import View.View;
+import Model.Model;
+import Controller.Controller;
 /**
  *
  * @author angel
@@ -17,11 +19,14 @@ public class StudyGroupApp extends JFrame{
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        java.awt.EventQueue.invokeLater(new Runnable(){
-        public void run(){
-            new LoginScreen().setVisible(true);
-        }
-        });
+        Model model = new Model();
+        View view = new View();
+        Controller controller = new Controller(model,view);
+//        java.awt.EventQueue.invokeLater(new Runnable(){
+//        public void run(){
+//            new LoginScreen().setVisible(true);
+//        }
+//        });
     }
     
 }
