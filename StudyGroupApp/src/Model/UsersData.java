@@ -59,7 +59,7 @@ public class UsersData {
             {
                 try
                 {
-                    user = (User) encoder.writeObject( new User());
+                    //user = (User) encoder.writeObject( new User());
                     usersData.add(user);
 
                 } catch (ArrayIndexOutOfBoundsException theend)
