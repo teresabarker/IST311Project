@@ -22,11 +22,6 @@ public class StudyGroupApp extends JFrame{
         Model model = new Model();
         View view = new View();
         Controller controller = new Controller(model,view);
-//        java.awt.EventQueue.invokeLater(new Runnable(){
-//        public void run(){
-//            new LoginScreen().setVisible(true);
-//        }
-//        });
     }
     
 }

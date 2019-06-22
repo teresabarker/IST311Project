@@ -21,6 +21,25 @@ public class User {
     String userDegree;
     //Calendar calendar;//TODO verify if it's too complex of a feature
     
+    public User(String firstName, String lastName, String username, String password, ArrayList<String> userGroups, int userType, String userDegree){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.username = username;
+    this.password = password;
+    this.userGroups = userGroups;
+    this.userType = userType;
+    this.userDegree = userDegree;
+    };
+    
+    public User(){
+    this.firstName = "";
+    this.lastName = "";
+    this.username = "";
+    this.password = "";
+    this.userGroups = new ArrayList<String>();
+    this.userType = 0;
+    this.userDegree = "";
+    };
     
     public String getFullName(){
         return firstName + " " + lastName;
