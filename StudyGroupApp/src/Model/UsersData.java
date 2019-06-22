@@ -18,7 +18,18 @@ import java.util.ArrayList;
  * @author angel
  */
 public class UsersData {
-    ArrayList<User> usersData = new ArrayList<User>();
+    ArrayList<User> usersData = new ArrayList<>();
+    User user = new User();
+
+    public UsersData() {
+    ArrayList<String> temp = new ArrayList<>();
+    User user1 = new User("firstName1", "lastName1", "username1", "password1",temp, 0, "UNDG");
+    User user2 = new User("firstName1", "lastName1", "username1", "password1",temp, 0, "UNDG");
+
+    usersData.add(user1);
+    usersData.add(user2);
+    writeUsersData();
+    }
     
     
     public void loadUsersData(){
@@ -47,20 +58,15 @@ public class UsersData {
         }
     }
     
-    public void writeUsersData(){
-        User user2 = new User();
+    public void writeUsersData(){//TODO fix not properly writing
         try
         {
-            User user;
             XMLEncoder encoder;
             encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream("UsersData.xml")));
-            user = new User();
-            while (user != null)
-            {
+            for(int i = 0; i < usersData.size();i++){
                 try
                 {
-                    //user = (User) encoder.writeObject( new User());
-                    usersData.add(user);
+                    encoder.writeObject(usersData.get(i));
 
                 } catch (ArrayIndexOutOfBoundsException theend)
                 {

@@ -5,6 +5,7 @@
  */
 package Controller;
 import Model.Model;
+import Model.UsersData;
 import View.View;
 import View.LoginScreen;
 
@@ -21,5 +22,7 @@ public class Controller {
             new LoginScreen().setVisible(true);
         }
         });
+        
+        new UsersData();
     }
 }
