@@ -18,27 +18,13 @@ import java.util.ArrayList;
  * @author angel
  */
 public class UsersData {
-
-    /**
-     * @return the usersData
-     */
-    public ArrayList<User> getUsersData() {
-        return usersData;
-    }
-
-    /**
-     * @param usersData the usersData to set
-     */
-    public void setUsersData(ArrayList<User> usersData) {
-        this.usersData = usersData;
-    }
-    private ArrayList<User> usersData = new ArrayList<>();
+    ArrayList<User> usersData = new ArrayList<>();
     User user = new User();
 
     public UsersData() {
     ArrayList<String> temp = new ArrayList<>();
     User user1 = new User("firstName1", "lastName1", "username1", "password1",temp, 0, "UNDG");
-    User user2 = new User("firstName2", "lastName2", "username2", "password2",temp, 1, "UNDG2");
+    User user2 = new User("firstName1", "lastName1", "username1", "password1",temp, 0, "UNDG");
 
     usersData.add(user1);
     usersData.add(user2);
@@ -58,7 +44,7 @@ public class UsersData {
                 try
                 {
                     user = (User) decoder.readObject();
-                    getUsersData().add(user);
+                    usersData.add(user);
 
                 } catch (ArrayIndexOutOfBoundsException theend)
                 {
@@ -77,7 +63,16 @@ public class UsersData {
         {
             XMLEncoder encoder;
             encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream("UsersData.xml")));
-            encoder.writeObject(usersData);
+            for(int i = 0; i < usersData.size();i++){
+                try
+                {
+                    encoder.writeObject(usersData.get(i));
+
+                } catch (ArrayIndexOutOfBoundsException theend)
+                {
+                    break;
+                }
+            }
             encoder.close();
         } catch (Exception xx)
         {
