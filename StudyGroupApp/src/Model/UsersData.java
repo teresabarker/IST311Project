@@ -63,16 +63,7 @@ public class UsersData {
         {
             XMLEncoder encoder;
             encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream("UsersData.xml")));
-            for(int i = 0; i < usersData.size();i++){
-                try
-                {
-                    encoder.writeObject(usersData.get(i));
-
-                } catch (ArrayIndexOutOfBoundsException theend)
-                {
-                    break;
-                }
-            }
+            encoder.writeObject(usersData);
             encoder.close();
         } catch (Exception xx)
         {
