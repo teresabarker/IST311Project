@@ -14,15 +14,25 @@ import View.LoginScreen;
  * @author angel
  */
 public class Controller {
-    
+    static LoginScreen temp = new LoginScreen();
+    static UsersData temp2 = new UsersData();
     public Controller(Model model, View view){
         
         java.awt.EventQueue.invokeLater(new Runnable(){
         public void run(){
-            new LoginScreen().setVisible(true);
+            temp.setVisible(true);
         }
         });
         
-        new UsersData();
+        
     }
+    
+    public static void closeLoginScreen(){
+        temp.dispose();
+    }
+    
+    public static UsersData getUsersData(){
+    return temp2;
+    }
+    
 }

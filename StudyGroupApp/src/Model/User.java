@@ -58,30 +58,30 @@ public class User {
     /**
      * @return the userGroups
      */
-    public ArrayList<String> getUserGroups() {
-        return userGroups;
-    }
-
-    /**
-     * @param userGroups the userGroups to set
-     */
-    public void setUserGroups(ArrayList<String> userGroups) {
-        this.userGroups = userGroups;
-    }
+//    public ArrayList<String> getUserGroups() {
+//        return userGroups;
+//    }
+//
+//    /**
+//     * @param userGroups the userGroups to set
+//     */
+//    public void setUserGroups(ArrayList<String> userGroups) {
+//        this.userGroups = userGroups;
+//    }
 
     /**
      * @return the userType
      */
-    public int getUserType() {
-        return userType;
-    }
-
-    /**
-     * @param userType the userType to set
-     */
-    public void setUserType(int userType) {
-        this.userType = userType;
-    }
+//    public int getUserType() {
+//        return userType;
+//    }
+//
+//    /**
+//     * @param userType the userType to set
+//     */
+//    public void setUserType(int userType) {
+//        this.userType = userType;
+//    }
 
     /**
      * @return the userDegree
@@ -100,8 +100,8 @@ public class User {
     private String lastName;
     private String username;
     private String password;
-    private ArrayList<String> userGroups;//TODO change to events type
-    private int userType;//change to enum Student, professor, tutor
+    //private ArrayList<String> userGroups;//TODO change to events type
+   // private int userType;//change to enum Student, professor, tutor
     private String userDegree;
     //Calendar calendar;//TODO verify if it's too complex of a feature
     
@@ -110,8 +110,8 @@ public class User {
     this.lastName = lastName;
     this.username = username;
     this.password = password;
-    this.userGroups = userGroups;
-    this.userType = userType;
+    //this.userGroups = userGroups;
+    //this.userType = userType;
     this.userDegree = userDegree;
     };
     
@@ -120,8 +120,8 @@ public class User {
     this.lastName = "";
     this.username = "";
     this.password = "";
-    this.userGroups = new ArrayList<String>();
-    this.userType = 0;
+    //this.userGroups = new ArrayList<String>();
+    //this.userType = 0;
     this.userDegree = "";
     };
     
